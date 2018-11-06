@@ -1,0 +1,7 @@
+<toggle>
+  <ng-template let-on="on" let-fns="fns">
+    <button [toggler]="{ ariaChecked: false }" [on]="on" [role]="'button'" [attr.aria-pressed]="on" (click)="fns.toggle()">
+      {{on ? 'on' : 'off'}}
+    </button>
+  </ng-template>
+</toggle>

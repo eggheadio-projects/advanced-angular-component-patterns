@@ -1,0 +1,6 @@
+<toggle (toggled)="log('toggle', $event)" [stateReducer]="stateReducer">
+  <ng-template let-on="on" let-fns="fns">
+    <switch [on]="on" toggler (click)="fns.toggle()">
+    </switch>
+  </ng-template>
+</toggle>

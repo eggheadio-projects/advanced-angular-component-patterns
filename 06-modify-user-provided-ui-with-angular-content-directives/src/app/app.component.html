@@ -1,0 +1,10 @@
+<toggle>
+  <ng-template let-on="on" let-fns="fns">
+    <switch toggler [on]="on" (click)="fns.toggle()">
+    </switch>
+    <hr />
+    <button toggler [on]="on" (click)="fns.toggle()">
+      {{on ? 'on' : 'off'}}
+    </button>
+  </ng-template>
+</toggle>
